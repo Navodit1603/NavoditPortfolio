@@ -1,13 +1,13 @@
 "use client";
 import { cn } from "../../../lib/util";
 import React, {
-  useState,
-  useEffect,
-  useRef,
-  RefObject,
-  useCallback,
-} from "react";
-
+    useState,
+    useEffect,
+    useRef,
+    useCallback,
+  } from "react";
+  import type { RefObject } from "react";
+  
 interface StarProps {
   x: number;
   y: number;

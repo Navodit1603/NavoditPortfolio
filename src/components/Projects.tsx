@@ -8,7 +8,7 @@ export default function Projects(){
                 className="w-full h-screen bg-cover bg-center"
                 style={{ backgroundImage: `url(${bg3})` }}
             >
-                <Card title="poop" description="poop pooop pooop"/>
+                <Card title="test" description="test test test"/>
             </div>
         </div>
     )
