@@ -1,6 +1,6 @@
 // import bg2 from "../assets/bg2.png";
 import resume from "../assets/resume.pdf";
-
+import profile from "../assets/profile.jpeg";
 
 export default function About() {
     return (
@@ -22,7 +22,7 @@ export default function About() {
                         {/* Left: Image */}
                         <div className="flex flex-col items-center flex-shrink-0">
                             <img
-                                src="src/assets/profile.jpeg" // replace with your image path
+                                src={profile}
                                 alt="Your Photo"
                                 className="w-64 h-64 object-cover rounded-full shadow-lg"
                             />
