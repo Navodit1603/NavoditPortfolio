@@ -16,7 +16,7 @@ export default function Card({ title, description, onClick }: CardProps) {
                 <h1 className="text-[#F8FCFA] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center">
                     {title}
                 </h1>
-                <p className="text-[#F8FCFA] font-medium mt-4 text-base sm:text-lg md:text-xl">
+                <p className="text-[#F8FCFA] text-center font-medium mt-4 text-base sm:text-lg md:text-xl">
                     {description}
                 </p>
             </div>
