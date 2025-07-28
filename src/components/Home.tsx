@@ -1,4 +1,4 @@
-import bg1 from "../assets/bg1.png";
+import bg1 from "../assets/backgrounds/bg1.png";
 "use client";
 import { ShootingStars } from "../components/ui/shooting-stars";
 import { StarsBackground } from "../components/ui/stars-background";

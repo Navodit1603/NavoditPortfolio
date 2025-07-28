@@ -1,4 +1,4 @@
-import bg4 from "../assets/bg4.png"
+import bg4 from "../assets/backgrounds/bg4.png"
 
 export default function Skills(){
     return(

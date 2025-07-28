@@ -5,10 +5,18 @@ type ProjectModalProps = {
     description: string;
     tags: string[];
     github: string;
+    image: string;
     onClose: () => void;
 };
 
-export default function ProjectModal({ title, description, tags, github, onClose }: ProjectModalProps) {
+export default function ProjectModal({
+    title,
+    description,
+    tags,
+    github,
+    image,
+    onClose,
+}: ProjectModalProps) {
     useEffect(() => {
         document.body.classList.add("overflow-hidden");
         return () => {
@@ -18,16 +26,14 @@ export default function ProjectModal({ title, description, tags, github, onClose
 
     return (
         <div className="fixed inset-0 bg-[#1a1a1a]/80 flex items-center justify-center z-50">
-            <div className="bg-white rounded-lg shadow-lg max-w-3xl w-full h-3/4 overflow-y-auto flex flex-col"> {/* Added flex flex-col here */}
+            <div className="bg-white rounded-lg shadow-lg max-w-3xl w-full h-3/4 overflow-y-auto flex flex-col">
+                <img className="w-full h-64 object-cover rounded-t-lg" src={image} alt={title} />
 
-                <div className="w-full h-1/3 bg-amber-500"></div>
-                
-                <div className="p-6 flex flex-col flex-1"> {/* Removed justify-between here */}
-
+                <div className="p-6 flex flex-col flex-1">
                     <h2 className="text-3xl font-bold mb-4">{title}</h2>
-
+                    <div className="h-1/2">
                     <p className="text-gray-700 mb-6">{description}</p>
-
+                    </div>
                     <div className="mb-6">
                         <h3 className="text-lg font-semibold mb-2">Tags</h3>
                         <div className="flex flex-wrap gap-2">
@@ -51,7 +57,6 @@ export default function ProjectModal({ title, description, tags, github, onClose
                         >
                             View on GitHub
                         </a>
-
                         <button
                             onClick={onClose}
                             className="bg-orange-700 text-white px-4 py-2 rounded hover:bg-orange-600"
@@ -59,7 +64,6 @@ export default function ProjectModal({ title, description, tags, github, onClose
                             Close
                         </button>
                     </div>
-
                 </div>
             </div>
         </div>
