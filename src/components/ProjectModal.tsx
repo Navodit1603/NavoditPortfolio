@@ -31,9 +31,9 @@ export default function ProjectModal({
 
                 <div className="p-6 flex flex-col flex-1">
                     <h2 className="text-3xl font-bold mb-4">{title}</h2>
-                    <div className="h-1/2">
+                    
                     <p className="text-gray-700 mb-6">{description}</p>
-                    </div>
+                    
                     <div className="mb-6">
                         <h3 className="text-lg font-semibold mb-2">Tags</h3>
                         <div className="flex flex-wrap gap-2">
