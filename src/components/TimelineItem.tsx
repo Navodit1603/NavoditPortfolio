@@ -11,7 +11,7 @@ interface Props {
 const TimelineItem: React.FC<Props> = ({ role, date, company, description }) => {
   return (
     <div className="mb-10 ml-6 flex items-start relative">
-         <span className="absolute -left-8.25 top-2 w-4 h-4 bg-[#F8FCFA] rounded-full border-4 border-white"></span>
+         <span className="absolute -left-8.25 top-2 w-4 h-4 bg-[#F8FCFA] rounded-full border-4 border-[#F8FCFA]"></span>
       {/* Content */}
       <div className="flex flex-col md:flex-row md:items-start md:space-x-10 w-full">
         <div className="w-full md:w-1/3 mb-2 md:mb-0">

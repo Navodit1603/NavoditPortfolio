@@ -1,27 +1,27 @@
 import Timeline from "./Timeline";
 
 const workExperience = [
-  {
-    role: "Computer Architecture Class Grader",
-    date: "March 2025 - June 2025",
-    company: "Baskin Engineering School, UCSC",
-    description:
-      "Worked with professors and TAs to grade assignments and exams for the Computer Architecture class. Provided feedback to students on their work and helped clarify concepts.",
-  },
-  {
-    role: "Computer Architecture Class Grader",
-    date: "September 2024 - June 2025",
-    company: "Baskin Engineering School, UCSC",
-    description:
-      "Tutored students in computer architecture topics such as CPU design, memory hierarchy, pipelining, and ISA, while leading discussions on performance trade-offs. Provided feedback on assembly code and collaborated with faculty to support over 30 students across multiple sections.",
-  },
-  {
-    role: "Coding Instructor",
-    date: "June 2024 – August 2024",
-    company: "Coding4Youth Inc.",
-    description:
-      "Taught programming fundamentals in Python, HTML, Roblox Lua, and Scratch to students aged 7–17 through personalized one-on-one and group lessons. Designed custom projects, provided hands-on debugging support, and fostered problem-solving skills and coding confidence.",
-  },
+    {
+        role: "Computer Architecture Class Grader",
+        date: "March 2025 - June 2025",
+        company: "Baskin Engineering School, UCSC",
+        description:
+            "Worked with professors and TAs to grade assignments and exams for the Computer Architecture class. Provided feedback to students on their work and helped clarify concepts.",
+    },
+    {
+        role: "Computer Architecture Class Grader",
+        date: "September 2024 - June 2025",
+        company: "Baskin Engineering School, UCSC",
+        description:
+            "Tutored students in computer architecture topics such as CPU design, memory hierarchy, pipelining, and ISA, while leading discussions on performance trade-offs. Provided feedback on assembly code and collaborated with faculty to support over 30 students across multiple sections.",
+    },
+    {
+        role: "Coding Instructor",
+        date: "June 2024 – August 2024",
+        company: "Coding4Youth Inc.",
+        description:
+            "Taught programming fundamentals in Python, HTML, Roblox Lua, and Scratch to students aged 7–17 through personalized one-on-one and group lessons. Designed custom projects, provided hands-on debugging support, and fostered problem-solving skills and coding confidence.",
+    },
 ];
 
 
@@ -47,22 +47,20 @@ const education = [
 ]
 
 export default function Resume() {
-  return (
-    <div className="bg-[#101829] min-h-screen">
-      <div className="relative max-w-4xl mx-auto px-4 pt-4 pb-4">
-        <h1 className="text-[#D9AB88] text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-4">
-          Resume
-        </h1>
-        <p className="text-center text-gray-500 mb-10 text-2xl">
-          Work Experiences and Education.
-        </p>
+    return (
+        <div className="bg-[#101829] min-h-screen">
+            <h1 className="text-[#F8FCFA] text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-4 py-12">
+                    Work Experiences and Education
+                </h1>
+            <div className="relative max-w-4xl mx-auto px-4 pt-4 pb-4">
+                
 
-        <h3 className="text-2xl font-bold text-orange-500 mb-10 text-center">Work Experience</h3>
-        <Timeline items={workExperience} />
+                <h3 className="text-2xl font-bold text-orange-500 mb-10 text-center">Work Experience</h3>
+                <Timeline items={workExperience} />
 
-        <h3 className="text-2xl font-bold text-orange-500 mb-10 text-center">Education</h3>
-        <Timeline items={education} />
-      </div>
-    </div>
-  );
+                <h3 className="text-2xl font-bold text-orange-500 mb-10 text-center">Education</h3>
+                <Timeline items={education} />
+            </div>
+        </div>
+    );
 }

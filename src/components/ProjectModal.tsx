@@ -26,7 +26,7 @@ export default function ProjectModal({
 
     return (
         <div className="fixed inset-0 bg-[#1a1a1a]/80 flex items-center justify-center z-50">
-            <div className="bg-white rounded-lg shadow-lg max-w-3xl w-full h-3/4 overflow-y-auto flex flex-col">
+            <div className="bg-[#F8FCFA] rounded-lg shadow-lg max-w-3xl w-full h-3/4 overflow-y-auto flex flex-col">
                 <img className="w-full h-64 object-cover rounded-t-lg" src={image} alt={title} />
 
                 <div className="p-6 flex flex-col flex-1">
@@ -53,13 +53,13 @@ export default function ProjectModal({
                             href={github}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700"
+                            className="bg-gray-800 text-[#F8FCFA] px-4 py-2 rounded hover:bg-gray-700"
                         >
                             View on GitHub
                         </a>
                         <button
                             onClick={onClose}
-                            className="bg-orange-700 text-white px-4 py-2 rounded hover:bg-orange-600"
+                            className="bg-orange-700 text-[#F8FCFA] px-4 py-2 rounded hover:bg-orange-600"
                         >
                             Close
                         </button>
