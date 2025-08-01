@@ -6,8 +6,9 @@ import { StarsBackground } from "../components/ui/stars-background";
 export default function Home() {
   return (
     <div
-      className="w-full h-screen bg-cover bg-center relative"
+      className="min-h-screen -mt-16 pt-16 w-full h-screen bg-cover bg-center relative"
       style={{ backgroundImage: `url(${bg1})` }}
+      id="home"
     >
       <ShootingStars className="pointer-events-none z-0" />
       <StarsBackground starDensity={0.001} className="pointer-events-none z-0" />

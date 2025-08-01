@@ -4,7 +4,7 @@ import profile from "../assets/profile.jpeg";
 
 export default function About() {
     return (
-        <div>
+        <div id="about">
             <div className="min-h-screen px-4 py-12 bg-[#101829] flex flex-col items-center">
                 {/* Title */}
                 <h1 className="text-[#F8FCFA] text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-12">
