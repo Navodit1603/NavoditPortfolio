@@ -4,8 +4,10 @@ import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
+import Contact from './components/Contact';
 
 import icon from '/icon.png';
+
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +16,7 @@ function App() {
   // Detect active section on scroll
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'projects', 'resume'];
+    const sections = ['contact', 'resume', 'projects', 'about', 'home'];
       const scrollY = window.scrollY + 100; // add offset for sticky navbar
 
       for (let id of sections) {
@@ -49,6 +51,7 @@ function App() {
             <li><a href="#about" className={navLinkClass('about')}>About</a></li>
             <li><a href="#projects" className={navLinkClass('projects')}>Projects</a></li>
             <li><a href="#resume" className={navLinkClass('resume')}>Resume</a></li>
+            <li><a href="#contact" className={navLinkClass('contact')}>Contact</a></li>
           </ul>
 
           {/* Hamburger Icon */}
@@ -75,7 +78,7 @@ function App() {
         {/* Mobile Nav Links */}
         {isOpen && (
           <ul className="md:hidden flex flex-col items-center space-y-4 py-4 bg-[#101829] text-[#F8FCFA]">
-            {['home', 'about', 'projects', 'resume'].map((id) => (
+            {['home', 'about', 'projects', 'resume', 'contact'].map((id) => (
               <li key={id}>
                 <a
                   href={`#${id}`}
@@ -94,6 +97,7 @@ function App() {
       <About />
       <Projects />
       <Resume />
+      <Contact />
     </div>
   );
 }

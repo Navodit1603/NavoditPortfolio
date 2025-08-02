@@ -49,7 +49,7 @@ const education = [
 export default function Resume() {
     return (
         <div className="bg-[#101829] min-h-screen" id="resume">
-            <h1 className="text-[#F8FCFA] text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-4 py-12">
+            <h1 className="text-[#F8FCFA] text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-4 py-16">
                     Work Experiences and Education
                 </h1>
             <div className="relative max-w-4xl mx-auto px-4 pt-4 pb-4">
