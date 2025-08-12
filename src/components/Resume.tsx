@@ -9,7 +9,7 @@ const workExperience = [
             "Worked with professors and TAs to grade assignments and exams for the Computer Architecture class. Provided feedback to students on their work and helped clarify concepts.",
     },
     {
-        role: "Computer Architecture Class Grader",
+        role: "Computer Architecture Class Tutor",
         date: "September 2024 - June 2025",
         company: "Baskin Engineering School, UCSC",
         description:
