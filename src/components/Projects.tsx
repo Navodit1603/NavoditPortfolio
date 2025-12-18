@@ -9,6 +9,8 @@ import portfolio from "../assets/ProjectThumbnails/website.png";
 import ngrams from "../assets/ProjectThumbnails/n-grams.png";
 import sentiment from "../assets/ProjectThumbnails/sentiment.webp";
 import teacherRating from "../assets/ProjectThumbnails/teacherRating.png";
+import nlp from "../assets/ProjectThumbnails/nlp.png";
+import transformers from "../assets/ProjectThumbnails/transformers.png";
 
 type ProjectData = {
     title: string;
@@ -30,8 +32,49 @@ export default function Projects() {
                 <h1 className="text-[#F8FCFA] text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-12">
                     Projects
                 </h1>
-
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl justify-items-center">
+                    <Card
+                                title="Slot Tagging"
+                                description="BiLSTM-CRF movie slot tagging"
+                                image={nlp}
+                                onClick={() =>
+                                    openModal({
+                                        title: "Slot Tagging",
+                                        description: "Focuses on building a BiLSTM-CRF model to perform slot tagging on movie-related user queries using BIO labels. Through careful data preparation and hyperparameter tuning, the model achieved strong validation and test F1 scores, demonstrating effective sequence labeling performance.",
+                                        tags: ["Python", "Natural Language Processing", "Machine Learning"],
+                                        github: "https://github.com/Navodit1603/Slot-Tagging",
+                                        image: nlp,
+                                    })
+                                }
+                            />
+                    <Card
+                            title="Transformers"
+                            description="Understand and Generate Human Language."
+                            image={transformers}
+                            onClick={() =>
+                                openModal({
+                                    title: "Transformers",
+                                    description: "Implementing and training a Transformer-based language model using self-attention and next-token prediction, while tuning architectural and optimization hyperparameters to balance efficiency, overfitting, and perplexity performance.",
+                                    tags: ["Python", "Natural Language Processing", "Machine Learning", "Transformers"],
+                                    github: "https://github.com/Navodit1603/Transformer",
+                                    image: transformers,
+                                })
+                            }
+                        />
+                    <Card
+                        title="Relation Extraction"
+                        description="Identify information from user query"
+                        image={nlp}
+                        onClick={() =>
+                            openModal({
+                                title: "Relation Extraction",
+                                description: "The objective was to train a model that could correctly classify new user queries based on the information they seek.",
+                                tags: ["Python", "Natural Language Processing", "Machine Learning"],
+                                github: "https://github.com/Navodit1603/RelationExtraction",
+                                image: nlp,
+                            })
+                        }
+                    />
                     <Card
                         title="TOAD"
                         description="Collaborative Trip Planner"
