@@ -1,5 +1,6 @@
 // import bg2 from "../assets/bg2.png";
-import resume from "../assets/resume.pdf";
+import cs_resume from "../assets/NavoditMaheshwariResume2026.pdf";
+import ml_resume from "../assets/NavoditMaheshwariMLResume2026.pdf";
 import profile from "../assets/profile.jpeg";
 
 export default function About() {
@@ -26,13 +27,14 @@ export default function About() {
 
                     {/* Right: Text */}
                     <div className="text-[#F8FCFA] font-semibold text-left space-y-4 text-base sm:text-lg md:text-xl">
-                        <p>I'm a software developer with a strong passion for machine learning
-                            and natural language processing. I enjoy building intelligent,
-                            user-focused applications that improve how we interact with technology.
-                            With experience in Python, Java, and JavaScript, I’ve contributed to collaborative
-                            software projects across both academic and team environments. I recently completed my
-                            Computer Science degree at UC Santa Cruz and will be starting a Master's in NLP at the Silicon Valley
-                            extention campus in Fall 2025. I'm always eager to learn, grow, and build with others.</p>
+                        <p>Hi, my name is Navodit Maheshwari. I recently completed my Bachelor’s degree in computer science at 
+                            University of California, Santa Cruz and now am a Master’s student studying Natural Language Processing 
+                            and other Artificial Intelligence/Machine Learning methods. I enjoy building intelligent, user-focused 
+                            applications that improve how we interact with technology. I am especially interested in Natural Language 
+                            Processing techniques relating to AI Conversational Agents and Sentiment Analysis. With experience in 
+                            Python, Java, and JavaScript, I’ve contributed to collaborative software projects across both academic 
+                            and team environments. I'm always eager to learn, grow, and build with others. Outside of coding, 
+                            I enjoy playing video games, the guitar and basketball. </p>
 
                     </div>
                 </div>
@@ -55,9 +57,16 @@ export default function About() {
                             </p>
                         </div>
                         <div className="pb-4">
-                            <p className="text-xl font-semibold">Resume</p>
+                            <p className="text-xl font-semibold">CS Resume</p>
                             <p className="text-gray-300 hover:text-amber-600">
-                                <a href={resume}>Download</a>
+                                <a href={cs_resume} target="_blank" rel="noopener noreferrer">Download</a>
+                            </p>
+                        </div>
+
+                        <div className="pb-4">
+                            <p className="text-xl font-semibold">ML Resume</p>
+                            <p className="text-gray-300 hover:text-amber-600">
+                                <a href={ml_resume} target="_blank" rel="noopener noreferrer">Download</a>
                             </p>
                         </div>
                     </div>

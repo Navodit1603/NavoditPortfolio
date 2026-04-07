@@ -34,33 +34,63 @@ export default function Projects() {
                 </h1>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl justify-items-center">
                     <Card
-                                title="Slot Tagging"
-                                description="BiLSTM-CRF movie slot tagging"
-                                image={nlp}
-                                onClick={() =>
-                                    openModal({
-                                        title: "Slot Tagging",
-                                        description: "Focuses on building a BiLSTM-CRF model to perform slot tagging on movie-related user queries using BIO labels. Through careful data preparation and hyperparameter tuning, the model achieved strong validation and test F1 scores, demonstrating effective sequence labeling performance.",
-                                        tags: ["Python", "Natural Language Processing", "Machine Learning"],
-                                        github: "https://github.com/Navodit1603/Slot-Tagging",
-                                        image: nlp,
-                                    })
-                                }
-                            />
+                        title="X-Ray Fracture Detection"
+                        description="Image Captioning for Fracture Detection"
+                        image={nlp}
+                        onClick={() =>
+                            openModal({
+                                title: "X-Ray Fracture Detection",
+                                description: "Fine-tuned CLIP, BLIP, and BiomedCLIP on 60K MIMIC-CXR images to generate structured fracture reports. Used hard negative mining to handle 98% normal scans and improve contrastive learning. Benchmarked against ClinicalBLIP using METEOR; achieved 0.276 with BiomedCLIP (3.4× over zero-shotbaseline).",
+                                tags: ["Python", "Natural Language Processing", "Machine Learning", "Image Captioning"],
+                                github: "https://github.com/achang93/XrayToCaption",
+                                image: nlp,
+                            })
+                        }
+                    />
+
                     <Card
-                            title="Transformers"
-                            description="Understand and Generate Human Language."
-                            image={transformers}
-                            onClick={() =>
-                                openModal({
-                                    title: "Transformers",
-                                    description: "Implementing and training a Transformer-based language model using self-attention and next-token prediction, while tuning architectural and optimization hyperparameters to balance efficiency, overfitting, and perplexity performance.",
-                                    tags: ["Python", "Natural Language Processing", "Machine Learning", "Transformers"],
-                                    github: "https://github.com/Navodit1603/Transformer",
-                                    image: transformers,
-                                })
-                            }
-                        />
+                        title="AI Fitness Agent"
+                        description="AI Agent for Personalized Fitness Guidance"
+                        image={nlp}
+                        onClick={() =>
+                            openModal({
+                                title: "AI Fitness Agent",
+                                description: "Built a multi-agent fitness system using GPT-OSS 20B, Qwen2.5-7B, and Gemma3-27B for personalized workouts. Implemented RAG to ground recommendations in user history, habits, and available equipment. Developed a vision agent to detect gym equipment from images and map to muscle groups.",
+                                tags: ["Python", "Natural Language Processing", "Machine Learning", "AI Agents", "Retrieval-Augmented Generation"],
+                                github: "https://github.com/naalpere17/AIFitnessAgent",
+                                image: nlp,
+                            })
+                        }
+                    />
+
+                    <Card
+                        title="Slot Tagging"
+                        description="BiLSTM-CRF movie slot tagging"
+                        image={nlp}
+                        onClick={() =>
+                            openModal({
+                                title: "Slot Tagging",
+                                description: "Focuses on building a BiLSTM-CRF model to perform slot tagging on movie-related user queries using BIO labels. Through careful data preparation and hyperparameter tuning, the model achieved strong validation and test F1 scores, demonstrating effective sequence labeling performance.",
+                                tags: ["Python", "Natural Language Processing", "Machine Learning"],
+                                github: "https://github.com/Navodit1603/Slot-Tagging",
+                                image: nlp,
+                            })
+                        }
+                    />
+                    <Card
+                        title="Transformers"
+                        description="Understand and Generate Human Language."
+                        image={transformers}
+                        onClick={() =>
+                            openModal({
+                                title: "Transformers",
+                                description: "Implementing and training a Transformer-based language model using self-attention and next-token prediction, while tuning architectural and optimization hyperparameters to balance efficiency, overfitting, and perplexity performance.",
+                                tags: ["Python", "Natural Language Processing", "Machine Learning", "Transformers"],
+                                github: "https://github.com/Navodit1603/Transformer",
+                                image: transformers,
+                            })
+                        }
+                    />
                     <Card
                         title="Relation Extraction"
                         description="Identify information from user query"

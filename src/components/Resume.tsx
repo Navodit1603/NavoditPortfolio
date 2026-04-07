@@ -2,18 +2,18 @@ import Timeline from "./Timeline";
 
 const workExperience = [
     {
-        role: "Computer Architecture Class Tutor",
+        role: "Graduate Researcher – LLM Steering & Alignment",
+        date: "Feburary 2026 - Present",
+        company: "Lab of Chenguang Wang, UCSC",
+        description:
+            "Identified activation entanglement in single-layer DIM steering vectors, leading to consistent out-of-distribution degradation across multiple LLM families, and analyzed representation quality using GemmaScope and SAELens with metrics like reconstruction error, sparsity, and entropy. Developed a multi-layer steering approach that redistributes high-magnitude activations across transformer layers, improving safety and reducing unintended side effects, and validated its effectiveness across 17 datasets on Gemma 3 4B, Llama 3.1 8B, and Qwen 3 4B.",
+    },
+    {
+        role: "Baskin Class Grader and Tutor",
         date: "September 2024 - Present",
         company: "Baskin Engineering School, UCSC",
         description:
-            "Tutored students in computer architecture topics such as CPU design, memory hierarchy, pipelining, and ISA, while leading discussions on performance trade-offs. Provided feedback on assembly code and collaborated with faculty to support over 30 students across multiple sections.",
-    },
-    {
-        role: "Computer Architecture Class Grader",
-        date: "March 2025 - June 2025",
-        company: "Baskin Engineering School, UCSC",
-        description:
-            "Worked with professors and TAs to grade assignments and exams for the Computer Architecture class. Provided feedback to students on their work and helped clarify concepts.",
+            "Worked with professors and TAs to grade assignments and exams for various engineering classes. Provided feedback to students on their work and helped clarify concepts.",
     },
     {
         role: "Coding Instructor",
@@ -28,7 +28,7 @@ const workExperience = [
 const education = [
     {
         role: "Master's Degree",
-        date: "Starting Sepember 2025",
+        date: "Sepember 2025 - December 2026",
         company: "University of California, Santa Cruz",
         description: "Pursuing a Master's in Natural Language Processing at the Silicon Valley extension campus, focusing on advanced NLP techniques and applications.",
     },
