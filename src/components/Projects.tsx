@@ -11,6 +11,7 @@ import sentiment from "../assets/ProjectThumbnails/sentiment.webp";
 import teacherRating from "../assets/ProjectThumbnails/teacherRating.png";
 import nlp from "../assets/ProjectThumbnails/nlp.png";
 import transformers from "../assets/ProjectThumbnails/transformers.png";
+import minecraft from "../assets/ProjectThumbnails/minecraft.jpg";
 
 type ProjectData = {
     title: string;
@@ -36,6 +37,21 @@ export default function Projects() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl justify-items-center">
 
                     {/* insert new cards here */}
+
+                    <Card
+                        title="Autonomous Minecraft Agent"
+                        description="An AI agent that completes and survives in the game Minecraft"
+                        image={minecraft}
+                        onClick={() => {
+                            openModal({
+                                title: "Autonomous Minecraft Agent",
+                                description: "An AI agent that completes and survives in the game Minecraft with the use a persistent memory framework combining RAG, knowledge graphs, and episodic reflection to extract reusable skills and accumulate factual knowledge across tasks. Used Model Context Protocol (MCP) to expose custom Mineflayer tools through a standardized interface for low level tasks. Outperformed baselines such as Voyager by obtaining diamond tools in less itterations.",
+                                tags: ["Typescript", "Docker", "RAG", "MCP", "LLMs", "Agents"],
+                                github: "https://github.com/Isaac-To/yearn_for_mines",
+                                image: minecraft,
+                            });
+                        }}
+                    />
 
 
                     <Card
