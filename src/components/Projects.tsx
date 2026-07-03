@@ -32,7 +32,12 @@ export default function Projects() {
                 <h1 className="text-[#F8FCFA] text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-12">
                     Projects
                 </h1>
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl justify-items-center">
+
+                    {/* insert new cards here */}
+
+
                     <Card
                         title="X-Ray Fracture Detection"
                         description="Image Captioning for Fracture Detection"

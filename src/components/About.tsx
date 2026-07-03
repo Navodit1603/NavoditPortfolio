@@ -27,15 +27,13 @@ export default function About() {
 
                     {/* Right: Text */}
                     <div className="text-[#F8FCFA] font-semibold text-left space-y-4 text-base sm:text-lg md:text-xl">
-                        <p>Hi, my name is Navodit Maheshwari. I recently completed my Bachelor’s degree in computer science at 
-                            University of California, Santa Cruz and now am a Master’s student studying Natural Language Processing 
-                            and other Artificial Intelligence/Machine Learning methods. I enjoy building intelligent, user-focused 
-                            applications that improve how we interact with technology. I am especially interested in Natural Language 
-                            Processing techniques relating to AI Conversational Agents and Sentiment Analysis. With experience in 
-                            Python, Java, and JavaScript, I’ve contributed to collaborative software projects across both academic 
-                            and team environments. I'm always eager to learn, grow, and build with others. Outside of coding, 
-                            I enjoy playing video games, the guitar and basketball. </p>
-
+                        <p>I am currently pursuing a MS degree in Natural Language Processing at the University of California
+                            Santa Cruz. I am based and take my classes in Santa Clara where I enjoy building intelligent,
+                            user-focused applications that improve how we interact with technology. I am especially
+                            interested in working with Natural Language Processing techniques relating to AI Conversational
+                            Agents and other various agentic tools. With years of experience in Python, I’ve contributed
+                            to collaborative software projects across both academic and team environments. I'm always eager
+                            to connect, learn, grow, and build with others.  </p>
                     </div>
                 </div>
 
