@@ -1,6 +1,5 @@
 // import bg2 from "../assets/bg2.png";
-import cs_resume from "../assets/NavoditMaheshwariResume2026.pdf";
-import ml_resume from "../assets/NavoditMaheshwariMLResume2026.pdf";
+import resume from "../assets/NavoditMaheshwariResume.pdf";
 import profile from "../assets/profile.jpeg";
 
 export default function About() {
@@ -57,16 +56,10 @@ export default function About() {
                         <div className="pb-4">
                             <p className="text-xl font-semibold">CS Resume</p>
                             <p className="text-gray-300 hover:text-amber-600">
-                                <a href={cs_resume} target="_blank" rel="noopener noreferrer">Download</a>
+                                <a href={resume} target="_blank" rel="noopener noreferrer">Download</a>
                             </p>
                         </div>
 
-                        <div className="pb-4">
-                            <p className="text-xl font-semibold">ML Resume</p>
-                            <p className="text-gray-300 hover:text-amber-600">
-                                <a href={ml_resume} target="_blank" rel="noopener noreferrer">Download</a>
-                            </p>
-                        </div>
                     </div>
 
 
@@ -77,17 +70,20 @@ export default function About() {
                         </h3>
                         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 w-full">
                             <span className="bg-gray-800 text-[#F8FCFA] px-4 py-2 rounded-lg shadow">Python</span>
-                            <span className="bg-gray-800 text-[#F8FCFA] px-4 py-2 rounded-lg shadow">Java</span>
+                            {/* <span className="bg-gray-800 text-[#F8FCFA] px-4 py-2 rounded-lg shadow">Java</span> */}
                             <span className="bg-gray-800 text-[#F8FCFA] px-4 py-2 rounded-lg shadow">C, C++</span>
                             <span className="bg-gray-800 text-[#F8FCFA] px-4 py-2 rounded-lg shadow">JavaScript, TypeScript</span>
                             <span className="bg-gray-800 text-[#F8FCFA] px-4 py-2 rounded-lg shadow">HTML, CSS</span>
+                            <span className="bg-gray-800 text-[#F8FCFA] px-4 py-2 rounded-lg shadow">AI Agents, LangChain, Tool Calling</span>
+                            <span className="bg-gray-800 text-[#F8FCFA] px-4 py-2 rounded-lg shadow">Transformers, RAG</span>
+                            <span className="bg-gray-800 text-[#F8FCFA] px-4 py-2 rounded-lg shadow">PyTorch, TensorFlow</span>
                             <span className="bg-gray-800 text-[#F8FCFA] px-4 py-2 rounded-lg shadow">React, Flask, Spring Boot</span>
                             <span className="bg-gray-800 text-[#F8FCFA] px-4 py-2 rounded-lg shadow">Git</span>
                             <span className="bg-gray-800 text-[#F8FCFA] px-4 py-2 rounded-lg shadow">Docker</span>
                             <span className="bg-gray-800 text-[#F8FCFA] px-4 py-2 rounded-lg shadow">Firebase</span>
-                            <span className="bg-gray-800 text-[#F8FCFA] px-4 py-2 rounded-lg shadow">Vim</span>
+                            {/* <span className="bg-gray-800 text-[#F8FCFA] px-4 py-2 rounded-lg shadow">Vim</span> */}
                             <span className="bg-gray-800 text-[#F8FCFA] px-4 py-2 rounded-lg shadow">Firestore, MySQL</span>
-                            <span className="bg-gray-800 text-[#F8FCFA] px-4 py-2 rounded-lg shadow">English (fluent), Hindi (fluent)</span>
+                            {/* <span className="bg-gray-800 text-[#F8FCFA] px-4 py-2 rounded-lg shadow">English (fluent), Hindi (fluent)</span> */}
                         </div>
                     </div>
 
